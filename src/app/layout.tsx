@@ -2,6 +2,7 @@ import '../styles/global.scss'
 import type { Metadata } from 'next'
 import { Roboto } from 'next/font/google'
 import { siteConfig } from "../config/site"
+import { Header } from '@/components/Header/header'
 
 const roboto = Roboto({
   subsets: ['latin'],
@@ -50,7 +51,10 @@ export default function RootLayout({ children }: RootLayoutProps) {
       <head>
         <link rel="shortcut icon" href="/favicon/favicon.svg" type="image/svg" />
       </head>
-      <body className={roboto.className}>{children}</body>
+      <body className={roboto.className}>
+        <Header />
+        {children}
+      </body>
     </html>
   )
 }
