@@ -1,0 +1,38 @@
+@import "../../styles/includes.scss";
+
+.categoryFilter {
+    width: 100%;
+}
+
+.filterTitle {
+    //MQ
+    padding: 0.25rem 2rem 0.25rem 1rem;
+
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.filterContent {
+    display: flex;
+    flex-direction: column;
+    padding: 0.25rem 1.5rem;
+
+    label {
+        font-size: 1.6rem;
+        line-height: 2.5rem;
+        display: flex;
+        -webkit-box-align: center;
+        align-items: center;
+        color: rgb(86, 92, 105);
+        cursor: pointer;
+    }
+
+    input {
+        margin-right: 0.5rem;
+        flex-shrink: 0;
+    }
+}
+
+.teste {
+    width: 100%;
+}
