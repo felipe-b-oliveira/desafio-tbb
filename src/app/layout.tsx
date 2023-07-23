@@ -3,6 +3,7 @@ import type { Metadata } from 'next'
 import { Roboto } from 'next/font/google'
 import { siteConfig } from "../config/site"
 import { Header } from '@/components/Header/header'
+import { Footer } from '@/components/Footer/footer'
 
 const roboto = Roboto({
   subsets: ['latin'],
@@ -54,6 +55,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
       <body className={roboto.className}>
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   )

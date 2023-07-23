@@ -1,0 +1,22 @@
+@import "../../styles/includes.scss";
+
+.footerContainer {
+    //max-width: 100vw;
+    height: 5rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: $color-black;
+
+    div {
+        text-align: center;
+    }
+
+    a {
+        font-size: 1.2rem;
+        font-weight: 400;
+        color: $color-white;
+    }
+}
