@@ -1,5 +1,5 @@
 import { SearchIcon } from './search-icon';
-import styles from './styles.module.scss';
+import styles from './search.module.scss';
 
 export function PrimaryInputWSearchIcon() {
     return (
