@@ -7,9 +7,9 @@
     Projeto desafio de construção de página de e-commerce simples utilizando NextJS/React.
     <br />
     <br />
-    <a href="https://github.com/felipe-b-oliveira/desafio-mezza-frontend/issues">Reportar Bug</a>
+    <a href="https://github.com/felipe-b-oliveira/desafio-tbb/issues">Reportar Bug</a>
     ·
-    <a href="https://github.com/felipe-b-oliveira/desafio-mezza-frontend/issues">Requisitar Feature</a>
+    <a href="https://github.com/felipe-b-oliveira/desafio-tbb/issues">Requisitar Feature</a>
   </p>
 </p>
 
