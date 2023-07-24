@@ -1,34 +1,108 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<!-- LOGO -->
+<br />
+<p align="center">
+  <h3 align="center">Desafio The Brooklyn Brothers</h3>
 
-## Getting Started
+  <p align="center">
+    Projeto desafio de construção de página de e-commerce simples utilizando NextJS/React.
+    <br />
+    <br />
+    <a href="https://github.com/felipe-b-oliveira/desafio-mezza-frontend/issues">Reportar Bug</a>
+    ·
+    <a href="https://github.com/felipe-b-oliveira/desafio-mezza-frontend/issues">Requisitar Feature</a>
+  </p>
+</p>
 
-First, run the development server:
+<!-- TABELA DE CONTEÚDO -->
+## Tabela de Conteúdo
 
-```bash
-npm run dev
-# or
+* [Tecnologias](#tecnologias)
+* [Iniciando](#iniciando)
+  * [Pre Requisitos](#pre-requisitos)
+  * [Instalação](#instalação)
+* [Contribuindo](#contribuindo)
+* [Licença](#licença)
+* [Contato](#contato)
+
+<!-- SOBRE O PROJETO -->
+## Tecnologias
+
+Lista de principais ferramentas utilizadas no projeto. 
+
+* [NextJS](https://nextjs.org/)
+* [SASS](https://sass-lang.com/)
+* [Tanstack/React-Query](https://tanstack.com/query/latest)
+* [Axios](https://axios-http.com/ptbr/)
+* [JSON Server](https://www.npmjs.com/package/json-server)
+* [Yarn](https://yarnpkg.com/)
+
+<!-- INNICIANDO -->
+## Iniciando
+
+Instruções de como configurar e executar o projeto localmente.
+
+### Pre Requisitos
+
+O projeto utiliza o Yarn e o NodeJS, você pode conferir como instalá-los em seu sistema aqui:
+* [Yarn Installation](https://classic.yarnpkg.com/en/docs/install/)
+* [NodeJS Installation](https://nodejs.org/en)
+
+### Instalação
+
+1. Clone o repositório usando o comando abaixo:
+```sh
+git clone https://github.com/felipe-b-oliveira/desafio-tbb.git
+```
+2. Acesse a pasta do projeto e dentro da mesma execute o comando: 
+```sh
+yarn
+```
+3. Inicie a api com o JSON Server: 
+```sh
+yarn server
+```
+4. Execute o comando abaixo para executar o projeto
+```sh
 yarn dev
-# or
-pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+<!-- CONTRIBUTING -->
+## Contribuindo
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Contribuições são muito bem vindas 😎.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+1. Faça Fork desse repositório;
+2. Crie uma branch com a sua feature: `git checkout -b feature/MinhaFeature`
+3. Commit suas mudanças: `git commit -m 'feat: Minha nova feature'`
+4. Push a sua branch: `git push origin feature/MinhaFeature`
+5. Abra uma Pull Request
 
-## Learn More
+<!-- LICENÇA -->
+## Licença
 
-To learn more about Next.js, take a look at the following resources:
+Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+<!-- CONTATO -->
+## Contato
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+<p align="center">
 
-## Deploy on Vercel
+ <a href="https://twitter.com/FelipeOliveir9" target="_blank" >
+     <img alt="Twitter" src="https://img.shields.io/badge/-Twitter-9cf?style=flat-square&logo=Twitter&logoColor=white"></a>
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+  <a href="https://www.linkedin.com/in/felipe-oliveira-417376100/" target="_blank" >
+    <img alt="Linkedin" src="https://img.shields.io/badge/-Linkedin-blue?style=flat-square&logo=Linkedin&logoColor=white"></a>
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+  <a href="mailto:felipe.boliveira@outlook.com" alt="Gmail">
+    <img src="https://img.shields.io/badge/-felipe.boliveira@outlook.com-0078D4?style=flat-square&labelColor=0078D4&logo=gmail&logoColor=white&link=felipe.boliveira@outlook.com"/></a>
+
+</p>
+
+---
+
+Feito por **Felipe Oliveira**
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+[site-panvel-01]: https://github.com/felipe-b-oliveira/desafio-mezza-frontend/blob/main/docs/Images/resolucao_01.jpeg?raw=true
+[site-panvel-02]: https://github.com/felipe-b-oliveira/desafio-mezza-frontend/blob/main/docs/Images/resolucao_02.jpeg?raw=true
