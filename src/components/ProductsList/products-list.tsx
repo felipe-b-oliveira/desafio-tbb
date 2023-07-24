@@ -10,7 +10,6 @@ interface ProductsListProps {
 
 export function ProductsList(props: ProductsListProps) {
     const { data } = useProducts();
-    console.log('------> products-list::data', data)
 
     return (
         <div className={styles.listContainer}>
