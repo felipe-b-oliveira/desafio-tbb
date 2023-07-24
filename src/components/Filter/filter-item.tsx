@@ -1,6 +1,7 @@
 import { useProducts } from '@/hooks/useProducts';
 import styles from './filter.module.scss';
 import { Product } from '@/types/product';
+import { useState } from 'react';
 
 export function FilterItem() {
     const { data } = useProducts();
@@ -12,10 +13,17 @@ export function FilterItem() {
     return (
         <div className={styles.filterContent}>
             {
-                uniqueCategoryNamesArray?.map(category =>
+                uniqueCategoryNamesArray?.map((currCategory, i) =>
                     <label className={styles.filterOption}>
-                        <input type="checkbox" className={styles.filterCheckbox} data-ic-trigger="filtros-categoria" data-testid="checkboxFilter" value="has_flash"></input>
-                        {category}
+                        <input
+                            key={i}
+                            type="checkbox"
+                            name="category"
+                            value={currCategory}
+                            className={styles.filterCheckbox}
+                        //checked={false}
+                        />
+                        {currCategory}
                     </label>
                 )
             }
