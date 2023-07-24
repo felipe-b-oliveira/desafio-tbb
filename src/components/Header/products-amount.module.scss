@@ -1,0 +1,10 @@
+@import "../../styles/includes.scss";
+
+.ProductAmount {
+    grid-column: 2/-1;
+
+    font-size: 1.4rem;
+    line-height: 2.5rem;
+    color: rgb(86, 92, 105);
+    border-bottom: 1px solid rgb(182, 187, 194);
+}
