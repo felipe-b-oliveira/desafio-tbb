@@ -1,0 +1,7 @@
+@import "../../styles/includes.scss";
+
+.listContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 256px);
+    grid-gap: 32px
+}
