@@ -4,6 +4,7 @@ import { Roboto } from 'next/font/google'
 import { siteConfig } from "../config/site"
 import { Header } from '@/components/Header/header'
 import { Footer } from '@/components/Footer/footer'
+import { FilterContextProvider } from '@/contexts/filter-context'
 
 const roboto = Roboto({
   subsets: ['latin'],
@@ -53,9 +54,11 @@ export default function RootLayout({ children }: RootLayoutProps) {
         <link rel="shortcut icon" href="/favicon/favicon.svg" type="image/svg" />
       </head>
       <body className={roboto.className}>
-        <Header />
-        {children}
-        <Footer />
+        <FilterContextProvider>
+          <Header />
+          {children}
+          <Footer />
+        </FilterContextProvider>
       </body>
     </html>
   )
