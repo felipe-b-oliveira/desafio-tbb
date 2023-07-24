@@ -1,6 +1,8 @@
 import { ProductsFetchResponse } from "@/types/products-response";
 import { useQuery } from "@tanstack/react-query";
-import axios, { AxiosPromise } from "axios";
+import axios from "axios";
+import { useFilter } from "./useFilter";
+import { useDeferredValue } from "react";
 
 const fetcher = async (): Promise<ProductsFetchResponse> => {
     try {
@@ -16,12 +18,18 @@ const fetcher = async (): Promise<ProductsFetchResponse> => {
 }
 
 export function useProducts() {
+    const { search } = useFilter()
+    const searchDeferred = useDeferredValue(search)
+
     const { data } = useQuery({
         queryFn: fetcher,
         queryKey: ['products']
     })
 
+    const products = data?.nodes
+    const filteredProducts = products?.filter(product => product.name.toLocaleLowerCase().includes(searchDeferred.toLocaleLowerCase()))
+
     return {
-        data: data?.nodes
+        data: filteredProducts
     }
 }
