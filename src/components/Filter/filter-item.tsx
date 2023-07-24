@@ -29,7 +29,7 @@ export function FilterItem(props: FilterItemProps) {
         <div className={styles.filterContent}>
             {
                 uniqueCategoryNamesArray?.map((currCategory, i) =>
-                    <label className={styles.filterOption}>
+                    <label key={i} className={styles.filterOption}>
                         <input
                             key={i}
                             className={styles.filterCheckbox}
