@@ -18,7 +18,7 @@ const fetcher = async (): Promise<ProductsFetchResponse> => {
 }
 
 export function useProducts() {
-    const { search } = useFilter()
+    const { search, category } = useFilter()
     const searchDeferred = useDeferredValue(search)
 
     const { data } = useQuery({
@@ -29,7 +29,9 @@ export function useProducts() {
     const products = data?.nodes
     const filteredProducts = products?.filter(product => product.name.toLocaleLowerCase().includes(searchDeferred.toLocaleLowerCase()))
 
+    const filteredCategory = filteredProducts?.filter(product => product.category.name.toLocaleLowerCase().includes(category.toLocaleLowerCase()))
+
     return {
-        data: filteredProducts
+        data: filteredCategory
     }
 }

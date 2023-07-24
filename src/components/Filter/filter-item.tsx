@@ -2,8 +2,23 @@ import { useProducts } from '@/hooks/useProducts';
 import styles from './filter.module.scss';
 import { Product } from '@/types/product';
 import { useState } from 'react';
+import { useFilter } from '@/hooks/useFilter';
 
-export function FilterItem() {
+type FilterItemProps = {
+    category: string;
+};
+
+export function FilterItem(props: FilterItemProps) {
+    const { category, setCategory } = useFilter();
+    const [isChecked, setIsChecked] = useState(false);
+
+    const handleChange = (event: any) => {
+        setIsChecked((prevChecked) => !prevChecked);
+        const { name } = event
+        console.log(name)
+        setCategory(isChecked ? name : '');
+    };
+
     const { data } = useProducts();
 
     const categories = data?.map((item) => item.category);
@@ -17,11 +32,11 @@ export function FilterItem() {
                     <label className={styles.filterOption}>
                         <input
                             key={i}
-                            type="checkbox"
-                            name="category"
-                            value={currCategory}
                             className={styles.filterCheckbox}
-                        //checked={false}
+                            type="checkbox"
+                            name={currCategory}
+                            checked={category === currCategory}
+                            onChange={(e) => handleChange(e.target)}
                         />
                         {currCategory}
                     </label>

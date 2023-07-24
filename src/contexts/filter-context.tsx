@@ -4,8 +4,8 @@ import { ReactNode, createContext, useState } from 'react';
 
 export const FilterContext = createContext({
     search: '',
-    category: '',
     setSearch: (value: string) => { },
+    category: '',
     setCategory: (value: string) => { },
 })
 
