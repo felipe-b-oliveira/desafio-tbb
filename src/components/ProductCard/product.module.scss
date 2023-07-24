@@ -1,0 +1,41 @@
+@import "../../styles/includes.scss";
+
+.productCard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(10px);
+
+    width: 256px;
+
+    img {
+        width: 256px;
+        height: 300px;
+    }
+
+    div {
+        //height: 48px;
+        height: 6rem;
+        width: 100%;
+        padding: 1rem;
+
+        background-color: $color-black;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    span {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 150%;
+        text-align: center;
+
+        color: $color-white;
+    }
+}
