@@ -23,7 +23,8 @@
 
 .mainGridContainer {
     display: grid;
-    grid-template-columns: 1fr 5fr;
+    //grid-template-columns: 1fr 5fr;
+    grid-template-columns: 24rem 1fr;
     gap: 2rem;
 
     font-family: roboto;
