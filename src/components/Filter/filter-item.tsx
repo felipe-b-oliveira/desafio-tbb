@@ -12,11 +12,11 @@ export function FilterItem(props: FilterItemProps) {
     const { category, setCategory } = useFilter();
     const [isChecked, setIsChecked] = useState(false);
 
+    // TODO: Separar os states para que as categorias não desapareçam / criar um context so de categorias
     const handleChange = (event: any) => {
-        setIsChecked((prevChecked) => !prevChecked);
         const { name } = event
-        console.log(name)
         setCategory(isChecked ? name : '');
+        setIsChecked((prevChecked) => !prevChecked);
     };
 
     const { data } = useProducts();
