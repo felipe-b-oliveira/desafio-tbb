@@ -43,3 +43,15 @@
     //overflow-y: scroll;
     overscroll-behavior: contain;
 }
+
+@media (max-width: 860px) {
+    .mainGridContainer {
+        grid-template-columns: 18rem 1fr;
+    }
+}
+
+@media (max-width: 798px) {
+    .mainGridContainer {
+        grid-template-columns: none;
+    }
+}

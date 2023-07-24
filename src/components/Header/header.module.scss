@@ -19,9 +19,9 @@
     margin-right: auto;
     box-sizing: border-box;
 
-    display: grid;
-    grid-template-columns: 1fr 5fr;
-    gap: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     padding: 20px 160px;
 
@@ -32,13 +32,28 @@
         font-size: 3.2rem;
         line-height: 150%;
     }
+}
 
-    // nav {
-    //     margin-left: 5rem;
-    //     height: 5rem;
-    // }
+@media (max-width: 800px) {
+    .headerContent {
+        padding: 1rem 1rem;
 
-    // button {
-    //     margin-left: auto;
-    // }
+        a {
+            font-size: 2rem;
+        }
+    }
+}
+
+@media (max-width: 798px) {
+    .headerContainer {
+        height: 12rem;
+    }
+
+    .headerContent {
+        flex-direction: column;
+
+        a {
+            padding-bottom: 1rem;
+        }
+    }
 }
